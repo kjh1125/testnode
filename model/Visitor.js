@@ -1,10 +1,19 @@
 const mysql = require("mysql");
 
+//const cnn = mysql.createConnection({
+//    host: 'localhost',
+//    user: 'user',
+//    password: '1234',
+//    database: 'sesac'
+//});
+
 const cnn = mysql.createConnection({
-    host: 'localhost',
+    host: '192.168.0.104',
+    port: 3306,
     user: 'user',
     password: '1234',
-    database: 'sesac'
+    database: 'sesac2',
+    dialect: 'mysql'
 });
 
 //방명록 전체 정보 조회
